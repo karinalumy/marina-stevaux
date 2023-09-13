@@ -116,6 +116,7 @@ h1 {
     padding-top: 5rem;
     padding-bottom: 5rem;
     text-align: center;
+    background-color: #e9d6c4;
 }
 
 h2 {
@@ -158,7 +159,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: flex-start;
     text-align: center; 
     background-image: url('./assets/marina-sobre.png');
     background-size: cover;
@@ -170,8 +171,9 @@ h2 {
 h3 {
     font-family: 'Fahkwang', sans-serif;
     font-size: 3rem;  
-    max-width: 35rem;
+    max-width: 40rem;
     color: #a6493c;
+    margin-left: 20rem;
 }
 
 
@@ -183,9 +185,9 @@ h3 {
 #sobre p {
     text-align: center;
     font-size: 1.6rem;
+    margin-left: 20rem;
     
-    
-    width: 35rem;
+    width: 40rem;
 }
 
 /* ---- SAIBA MAIS ----*/
@@ -198,6 +200,7 @@ h3 {
     text-align: center;
     align-items: center;
     height: fit-content;
+    background-color: #e9d6c4;
 }
 
 h4 {
@@ -372,6 +375,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 1.6rem;
 }
 
 
@@ -398,11 +402,17 @@ footer {
     /*       banner       */
      #banner {
         height: 30rem;
+        padding-left: 0;
     }
     
     h1 {
         font-size: 1.6rem;
         color: #a6493c;
+        margin-left: 2rem;
+    }
+
+    #banner button{
+        margin-left: 2rem;
     }
 
     #banner button a{
@@ -441,15 +451,21 @@ footer {
         height: 50rem;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: flex-end; 
+        align-items: center;       
     }
     
     h3 {
         font-size: 2rem;  
+        width: 30rem;
+        margin-left: 0;
     }
 
-    .sobre-texto p{
+    #sobre p{
+        width: 30rem;
+        margin-left: 0;
         margin-bottom: 5rem;
+        
     }
      
         
