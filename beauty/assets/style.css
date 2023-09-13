@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto Slab', sans-serif;
+    background-color: rgb(236, 224, 224)
+}
+
+main {
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+
+header {
+    background-color: black;
+    display: flex;
+    
+    padding: 1.5rem;   
+}
+
+header img {
+    max-width: 20rem;
+    max-height: 5rem;
+}
+
+.container-menu {
+    display: flex;
+    align-items: center;
+}
+
+.container-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+}
+
+.container-menu li {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    list-style: none;
+}
+
+.container-menu a {
+    text-decoration: none;
+    color: rgb(236, 224, 224);
+}
+
+.container-menu a:hover {
+    cursor: pointer;
+    color: rgb(190, 182, 182);
+}
+
+/* ------MAIN-------*/
+
+#banner {
+    background-image: url('./assets/produtos-de-beleza-modernos-em-diferentes-composicoes-de-recipientes.jpg');
+    background-size: cover;
+	background-position: 35%;
+    height: 65rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+}
+
+h1 {
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
+    
+    text-align: center;
+    max-width: 55rem;
+}
+
+#banner p {
+    margin-top: 1rem;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    text-align: center;
+    max-width: 55rem;
+}
+
+#banner button {
+    height: 4rem;
+    border-radius: .8rem;
+    background-color: #7e7e7d;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 2rem;
+    
+}
+
+#banner button a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #080808;
+    padding: 2rem;
+    
+}
+
+#banner button:hover {
+    cursor: pointer;
+    background-color: #9b9b9a;
+}
+
+
+/* ----- SOBRE NÓS ------*/
+
+#sobrenos {
+    height: fit-content;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    width: 65rem;
+}
+
+h2 {
+    font-size: 4rem;  
+    text-align: center;
+}
+
+#sobrenos p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/* ----- SOLUÇÕES------*/
+#solucoes {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+
+    background-color:rgb(247, 238, 238);
+}
+
+h3 {
+    font-size: 2rem;
+    color:black;
+}
+
+.container-solucoes {
+    margin-top: 3rem;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5rem;
+    margin-left: 5rem;    
+}
+
+.container-solucoes li {
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+    margin-top: 3rem;
+}
+
+.container-solucoes li p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color:black;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+.container-solucoes li img {
+    max-height: 20rem;
+    max-width: 20rem;
+    margin-top: 1rem;
+}
+
+/* ---- SAIBA MAIS ----*/
+
+#saiba-mais {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    align-items: center;
+    height: fit-content;
+
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+.container-posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 33rem;
+
+    list-style: none;
+
+    margin-top: 5rem;
+}
+
+
+.post-image-one{
+    margin: 0 auto;
+    background-image: url("https://miro.medium.com/v2/resize:fit:720/format:webp/1*0CIyZ2b5lvOf8qc44auuoA.jpeg");
+    background-position: 0%;
+    box-shadow: .5rem .1rem 1rem #a7a6a6;
+    height: 20rem;
+    max-width: 30rem;
+   
+    border-radius: 2rem;
+    
+}
+
+.post-image-two{
+    margin: 0 auto;
+    background-image: url("https://miro.medium.com/v2/resize:fit:720/format:webp/1*9iZMSX_YVV15E97GmWu88w.jpeg");
+    background-position: 0%;
+    height: 20rem;
+    max-width: 30rem;
+    box-shadow: .3rem .1rem 1rem #a7a6a6;
+
+    border-radius: 2rem;
+}
+
+.post-image-three{
+    margin: 0 auto;
+    background-image: url("https://miro.medium.com/v2/resize:fit:720/format:webp/1*LyVDuIMjZQ4S4DvVkfdq6Q.png");
+    background-position: 40% 10%;
+    height: 20rem;
+    max-width: 30rem;
+    box-shadow: .5rem .1rem 1rem #a7a6a6;
+    
+    border-radius: 2rem;
+
+}
+
+.container-posts p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.container-posts button a{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+
+}
+
+.container-posts button{
+    height: 4rem;
+    width: 15rem;
+    border-radius: .8rem;
+    background-color: rgb(90, 89, 89);
+    border: none;
+    
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.container-posts button:hover {
+    cursor: pointer;
+    background-color: rgb(190, 182, 182);
+   
+}
+
+
+
+/* ----- CONTATO ------*/
+h5 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: rgb(0, 0, 0);
+}
+
+#contato {
+    background-color: rgb(247, 238, 238);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container-contato p{
+    margin-right: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 45rem;
+    text-align: center;
+}
+
+.container-contato button {
+    height: 4rem;
+    max-width: 30rem;
+    border-radius: .8rem;
+    background-color: rgb(197, 189, 189);
+    border: none;
+    
+    padding: 1rem;
+    
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.container-contato button a{
+    text-decoration: none;
+    color: black;
+}
+
+.container-contato button:hover {
+    cursor: pointer;
+    background-color: rgb(190, 182, 182);
+}
+
+#contato #email a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 1.8rem;
+}
+
+/* ----- FOOTER ---- */
+footer {
+    background-color: rgb(236, 224, 224); 
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* ---- MEDIA QUERIES ---- */
+@media (max-width: 40em) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        padding: 1.5rem 5rem 1.5rem 5rem;
+    }
+
+    header img {
+        max-width: 40rem;
+        max-height: 8rem;
+    }
+
+    .container-menu li {
+        font-size: 1.6rem;
+    }
+
+
+    /*   banner   */
+    #banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding-bottom: 5rem;
+        padding-left: 5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        max-width: 55rem;
+    }
+    
+    #banner p {
+        font-size: 1.6rem;
+    }
+
+    /*   sobre nós    */
+
+    #sobrenos {
+        height: fit-content;
+        padding: 5rem;
+
+        margin: 0 auto;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;  
+    }
+
+    #sobrenos p {
+        max-width: 45rem;
+        font-size: 1.6rem;
+    }
+
+
+    /*    soluções   */
+
+    h3 {
+        font-size: 2rem;
+        color:black;
+    }
+    
+    .container-solucoes {
+        margin-top: 3rem;
+        list-style: none;
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;    
+    }
+    
+    .container-solucoes li p {
+        max-width: 25rem;
+    }
+    
+    .container-solucoes li img {
+        max-height: 25rem;
+        max-width: 25rem;
+    }
+
+    /*     saiba mais    */
+   
+    h4 {
+        font-size: 3rem;
+    }
+    
+    .container-posts {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+        max-width: 100%;
+    }
+    
+    .container-posts p {
+        max-width: 35rem;
+    }
+    
+    /*    contato   */
+    h5 {
+        font-size: 2rem;
+    }
+    
+    .container-contato {
+        display: flex;
+        flex-direction: row;
+           
+    }
+    
+    .container-contato p{
+        max-width: 35rem;
+        text-align: right;
+        font-size: 2rem;
+    }
+    
+    .container-contato button {
+        height: 5rem;
+        width: 25rem;
+    
+        background-color: rgb(90, 89, 89);
+    }
+
+    .container-contato button a{
+        color: white;
+        font-size: 1.6rem;
+    }
+    
+    .container-contato button:hover {
+        background-color: rgb(180, 179, 179);
+    }
+
+    
+
+
+
+
+
+}
