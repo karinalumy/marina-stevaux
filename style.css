@@ -25,10 +25,15 @@ main {
 header {
     background-color: #92a2a4;
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    padding: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
 }
+
 
 .logo img{
     max-height: 6rem;
@@ -37,12 +42,15 @@ header {
 .container-menu {
     display: flex;
     align-items: center;
+    
+
 }
 
 .container-menu ul {
     display: flex;
     flex-wrap: wrap;
     margin-left: 5rem;
+    margin-right: 3rem;
 }
 
 .container-menu li {
@@ -61,19 +69,37 @@ header {
     color: #f7f9fa;
 }
 
+.instagram-button{
+    background-color: transparent;
+    border: none;
+}
+
+.instagram-button:hover {
+    cursor: pointer;
+}
+
+.img-insta{
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 /* ------MAIN-------*/
 
-#banner {
+.banner {
     background-image: url('./assets/dermatoprocedure.jpg');
     background-size: cover;
 	background-position: 35%;
-    height: 40rem;
+    height: 50rem;
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 2rem;
-    padding-left: 2rem;   
+    justify-content: center;
+    
+    padding-left: 2rem;
+    padding-bottom: 10rem;       
 }
 
 h1 {
@@ -84,7 +110,7 @@ h1 {
     width: 30rem;
 }
 
-#banner button {
+.banner button {
     min-height: 4rem;
     max-width: 15rem;
     border-radius: .8rem;
@@ -98,28 +124,117 @@ h1 {
     margin-bottom: 2rem;
 }
 
-#banner button a{
+.banner button a{
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: 700;
     color: #a6493c;
 }
 
-#banner button:hover {
+.banner button:hover {
     cursor: pointer;
     background-color: rgb(241, 235, 235);
 }
 
+/* ----- SOBRE ------*/
 
-/* ----- TRTAMENTOS------*/
-#tratamentos {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    text-align: center;
-    background-color: #e9d6c4;
+#sobre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+       
+    height: fit-content;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+#sobre .image-sobre{
+    margin-left: 5rem;
+    height: 45rem;
 }
 
 h2 {
+    font-family: 'Fahkwang', sans-serif;
+    
+    font-size: 3rem;  
+    max-width: 65rem;
+    color: #a6493c;
+    margin-left: 5rem;
+}
+
+
+#sobre p {
+    display: flex;
+    text-align: start;
+    font-size: 1.6rem;
+    margin: 2rem 5rem;
+    color: #666;
+    width: 65rem;
+}
+
+#sobre .imagens-curriculo{
+    display: flex;
+    flex-direction: row;
+    
+    margin-left: 5rem;
+    gap: 2rem;
+}
+
+#sobre img{
+    margin-top: 2rem;
+    height: 8rem;
+}
+
+/* -------- EMPRESA ---------- */
+
+.empresa {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0; /* Cor de fundo da section */
+    padding: 2rem; /* Espaçamento interno */
+    gap: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-image: url(./assets/M-cor.png);
+    background-size: cover;
+    
+}
+
+.caixa {
+    background-color: #fff; /* Cor de fundo das caixas */
+    padding: 4rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra nas caixas */
+    width: 25rem;
+    height: 30rem;
+}
+
+/* Estilos para os títulos (h2) */
+.caixa h3 {
+    font-size: 2.5rem;
+    color: #a6493c; /* Cor do texto dos títulos */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para os parágrafos (p) */
+.caixa p {
+    font-size: 1.6rem;
+    color: #666; /* Cor do texto dos parágrafos */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* ----- TRTAMENTOS------*/
+#especialidades {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;   
+}
+
+h4 {
     font-family: 'Fahkwang', sans-serif;
     font-size: 3rem;
     color:#a6493c;
@@ -130,77 +245,134 @@ h2 {
     list-style: none;
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;    
+    flex-direction: column; 
+    align-items: center ;  
 }
 
-.container-tratamentos li {
+.container-tratamentos span{
     font-weight: 700;
-    color: #a6493c;
-    margin-top: 2rem;
-    max-width: 35rem;
-}
-
-.container-tratamentos li p {
-    font-weight: 400;
-    color:black;
-    font-size: 1.6rem;
-}
-
-.container-tratamentos li img {
-    max-height: 25rem;
-}
-
-/* ----- SOBRE ------*/
-
-#sobre {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center; 
-    background-image: url('./assets/marina-sobre.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-    height: 40rem;
-}
-
-h3 {
     font-family: 'Fahkwang', sans-serif;
-    font-size: 3rem;  
-    max-width: 40rem;
-    color: #a6493c;
-    margin-left: 20rem;
+    font-size: 4rem;
+    color: #a6493c; 
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    align-items: flex-end;
+    height: 25rem;   
 }
 
-
-#sobre .sobre-texto{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.container-tratamentos P {
+    color: #666;
 }
 
-#sobre p {
-    text-align: center;
-    font-size: 1.6rem;
-    margin-left: 20rem;
+.dermatologia-clinica{
+    position: relative;
+    background-image: url('./assets/dermato-mao.png');
+    background-size: cover;
+    background-position: 35%;
     
-    width: 40rem;
+    height: 35rem;
+    width: 95vw;
+    margin-top: 2rem;
 }
+
+.dermatologia-clinica::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Cor branca completamente transparente (sem esbranquiçamento inicial) */
+    transition: background-color 0.5s; /* Adiciona uma transição suave de 0.5s para a cor de fundo */
+  }
+
+.dermatologia-clinica:hover::before {
+    background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade (esbranquiçamento no hover) */
+  }
+
+.dermatologia-clinica span, p{
+    position: relative;
+    z-index: 1; /* Coloca o texto acima da camada de sobreposição */
+    text-align: center;
+  }
+
+.tricologia{
+    position: relative;
+    background-image: url('./assets/dermato-couro-cabeludo.png');
+    background-size: cover;
+    background-position: 35%;
+    height: 35rem;
+    width: 95vw;
+    margin-top: 2rem;
+}
+
+.tricologia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Cor branca completamente transparente (sem esbranquiçamento inicial) */
+    transition: background-color 0.5s; /* Adiciona uma transição suave de 0.5s para a cor de fundo */
+  }
+
+.tricologia:hover::before {
+    background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade (esbranquiçamento no hover) */
+  }
+
+.tricologia span, p{
+    position: relative;
+    z-index: 1; /* Coloca o texto acima da camada de sobreposição */
+    text-align: center;
+  }
+
+
+.dermatologia-estetica{
+    position: relative;
+    background-image: url('./assets/dermato-botox.png');
+    background-size: cover;
+    background-position: 35%;
+    height: 35rem;
+    width: 95vw;
+    margin-top: 2rem;
+}
+
+.dermatologia-estetica::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Cor branca completamente transparente (sem esbranquiçamento inicial) */
+    transition: background-color 0.5s; /* Adiciona uma transição suave de 0.5s para a cor de fundo */
+  }
+
+.dermatologia-estetica:hover::before {
+    background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade (esbranquiçamento no hover) */
+  }
+
+.dermatologia-estetica span, p{
+    position: relative;
+    z-index: 1; /* Coloca o texto acima da camada de sobreposição */
+    text-align: center;
+  }
+
+
 
 /* ---- SAIBA MAIS ----*/
 
 #saiba-mais {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     height: fit-content;
-    background-color: #e9d6c4;
+   
 }
 
 h4 {
@@ -209,19 +381,15 @@ h4 {
     color: #a6493c;
 }
 
-#saiba-mais {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-
-    margin-top: 0 auto;
-}
-
 
 .saibamaiscontainer{
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
     padding-top: 2rem ;
+    gap: 10rem;
 }
 
 .saibamaiscontainer img{
@@ -235,8 +403,8 @@ h4 {
 }
 
 .saibamaiscontainer button a{
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 1.6rem;
+    
     color: white;
     text-decoration: none;
 }
@@ -259,26 +427,38 @@ h4 {
 
 /*-------LOCALIZAÇÃO--------- */
 #localização {
-    padding-top: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: #e9d7c6;
+}
+
+h5 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-
-#localização .localizacaotexto{
-    width: 35rem;
-}
-
-h5 {
     font-family: 'Fahkwang', sans-serif;
     font-size: 3rem;
     color: #a6493c;
+    margin-bottom: 3rem;
 }
 
-.localizazaotexto p{
-    margin-bottom: 1rem;
-    
+.localizacao-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+}
+
+.localizacao1 .localizacao2 .localizacao3 {
+    width: 35rem;
+}
+
+.localizacao-container p{
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color:#666;
 }
 
 iframe {
@@ -286,84 +466,18 @@ iframe {
     height: 20rem;
 }
 
-
-/* ----- CONTATO ------*/
-
-#contato {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
-
-.containercontato h6  {
-    font-family: 'Fahkwang', sans-serif;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #a6493c;
-}
-
-.containercontato button {
-    height: 4rem;
-    max-width: 30rem;
-    border-radius: .8rem;
-    background-color: #a6493c;
+.localizacao-container button {
     border: none;
-    
-    padding: 1rem;
-    
+    background-color: transparent;    
 }
-.containercontato button a{
+
+.localizacao-container button a{
     text-decoration: none;
-    color: #FFF;
-    font-size: 1.6rem;
-}
-
-.containercontato button:hover {
-    cursor: pointer;
-    background-color: #b48c6d;
-}
-
-.containerinstagram {
+    font-size: 1.8rem;
     font-weight: 700;
-    text-align: center;
-    font-size: 2rem;
-    margin-left: 5rem;
     color: #a6493c;
 }
 
-.containerinstagram p  {
-    font-family: 'Fahkwang', sans-serif;
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #a6493c;
-}
-
-.containerinstagram button {
-    height: 4rem;
-    max-width: 30rem;
-    border-radius: .8rem;
-    background-color: #a6493c;
-    border: none;
-    
-    padding: 1rem;
-}
-
-.containerinstagram button a{
-    text-decoration: none;
-    color: #FFF;
-    font-size: 1.6rem;
-}
-
-.containerinstagram button:hover {
-    cursor: pointer;
-    background-color: #b48c6d;
-}
 
 /* ----- FOOTER ---- */
 footer {
