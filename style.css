@@ -36,7 +36,7 @@ header {
 
 
 .logo img{
-    max-height: 6rem;
+    max-height: 10rem;
 }
 
 .container-menu {
@@ -429,7 +429,6 @@ h4 {
 #localização {
     padding-top: 10rem;
     padding-bottom: 10rem;
-    background-color: #e9d7c6;
 }
 
 h5 {
@@ -468,14 +467,22 @@ iframe {
 
 .localizacao-container button {
     border: none;
-    background-color: transparent;    
+    background-color: #a6493c;  
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 1rem;  
+}
+
+.localizacao-container button:hover {
+    cursor: pointer;
+    background-color: #b48c6d;
 }
 
 .localizacao-container button a{
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
-    color: #a6493c;
+    color: #ede5dd;
 }
 
 
@@ -500,91 +507,128 @@ footer {
         background-color: #92a2a4;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        padding: 3rem;
+        justify-content: center;
+        padding: 2rem;
+        position: fixed;
     }
-    
+
     .logo img{
-        max-height: 3rem;
+        max-height: 5rem;
+        margin-left:10rem;
     }
     
     .container-menu li {
         font-size: 1rem;
+        width: 20rem;
+    }
+
+    .container-menu {
+        display: flex;
+        justify-content: column;
+        align-items: center;
+    }
+
+    .img-insta{
+        height: 1.5rem;
     }
     
     
     /*       banner       */
-     #banner {
-        height: 30rem;
+     .banner {
+        height: 40rem;
         padding-left: 0;
+        padding-top: 10rem;
+        padding-bottom: 0;
     }
     
     h1 {
         font-size: 1.6rem;
-        color: #a6493c;
+        color: #ede5dd;
+        margin-left: 2rem;
+        margin-top: 20rem;
+    }
+
+    .banner button{
         margin-left: 2rem;
     }
 
-    #banner button{
-        margin-left: 2rem;
-    }
-
-    #banner button a{
+    .banner button a{
         font-size: 1.6rem;
     }
   
+    /*      sobre      */
+    
+    #sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    h2 {
+        font-size: 2rem;  
+        width: 30rem;
+        margin: 0 auto;
+    }
+
+    #sobre p{
+        width: 30rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        text-align: center;          
+    }
+
+    #sobre .imagens-curriculo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center; 
+
+    }
+
+    #sobre img{
+        height: 3rem;
+    }
     
     /*      Tratamentos     */   
     .container-tratamentos {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        margin-right: 5rem;
-        margin-left: 5rem;    
+        align-items: center;   
     }
 
-    h2{
+    h4{
         font-size: 2rem;
     }
+
+    .container-tratamentos span{
+         font-size: 2rem;
+         font-weight: 700;
+    }
     
-    .container-tratamentos li {
+    
+    .container-tratamentos {
         font-size: 1.6rem;
     }
     
-    .container-tratamentos li p {
+    .container-tratamentos p {
         font-size: 1.4rem;
         margin-bottom: 2rem;
+        color: black;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     
-    .container-tratamentos li img {
+    .container-tratamentos img {
         max-height: 20rem;
         max-width: 20rem;
     }
     
-    /*      sobre      */
-    
-    #sobre {
-        background-image: url('./assets/marina-sobre-mobile2.png');
-        height: 50rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end; 
-        align-items: center;       
-    }
-    
-    h3 {
-        font-size: 2rem;  
-        width: 30rem;
-        margin-left: 0;
-    }
-
-    #sobre p{
-        width: 30rem;
-        margin-left: 0;
-        margin-bottom: 5rem;
-        
-    }
      
         
     /*        saiba mais       */
@@ -592,25 +636,40 @@ footer {
         background-color: #ebdacb;
     }
 
-
     h4 {
         font-size: 2rem;
+    }
+
+    .saibamaiscontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     
         
     /*      localização     */
     #localização {
+        padding-top: o;
+    }
+
+    .localizacao-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
         justify-content: center;
-        padding-bottom: 0;
+        text-align: center;
     }
     
-    .localizacaotexto p{
+    .localizacao-container p{
         font-size: 1.8rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .localizacao-container button {
+        margin-top: 0;
+        margin-bottom: 5rem;
     }
     
     h5 {
@@ -620,7 +679,7 @@ footer {
     iframe {
         width: 30rem;
         height: auto;
-        margin-bottom: 3rem ;
+        margin-bottom: 1rem;
     }
     
     
