@@ -26,14 +26,14 @@ header {
     background-color: #92a2a4;
     display: flex;
     justify-content: space-around;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     
     position: fixed;
+    top: 0;
     width: 100vw;
     z-index: 1000;
 }
-
 
 .logo img{
     max-height: 8rem;
@@ -42,15 +42,11 @@ header {
 .container-menu {
     display: flex;
     align-items: center;
-    
-
 }
 
 .container-menu ul {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 5rem;
-    margin-right: 3rem;
 }
 
 .container-menu li {
@@ -91,9 +87,10 @@ header {
 .banner {
     background-image: url('./assets/dermatoprocedure.jpg');
     background-size: cover;
-	background-position: 35%;
+    background-position: 35%;
+    width: 100%;
     height: 50rem;
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,7 +110,7 @@ h1 {
 .banner button {
     min-height: 4rem;
     max-width: 15rem;
-    border-radius: .8rem;
+    
     background-color: #ede5dd;
     border: none;
     
@@ -142,15 +139,14 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-       
-    height: fit-content;
+    justify-content: center;
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
 
 #sobre .image-sobre{
-    margin-left: 5rem;
-    height: 45rem;
+    max-width: 100%;
+    max-height: 45rem;
 }
 
 h2 {
@@ -158,16 +154,18 @@ h2 {
     
     font-size: 3rem;  
     max-width: 65rem;
-    color: #a6493c;
-    margin-left: 5rem;
+    color: #a6493c; 
 }
 
+.sobre-container {
+    margin-left: 3rem;
+}
 
 #sobre p {
     display: flex;
     text-align: start;
     font-size: 1.6rem;
-    margin: 2rem 5rem;
+    
     color: #666;
     width: 65rem;
 }
@@ -176,14 +174,12 @@ h2 {
     display: flex;
     flex-direction: row;
     
-    margin-left: 5rem;
+    margin-top: 1rem;
     gap: 2rem;
+    height: 5rem;
 }
 
-#sobre img{
-    margin-top: 2rem;
-    height: 8rem;
-}
+
 
 /* -------- EMPRESA ---------- */
 
@@ -242,125 +238,60 @@ h4 {
 
 .container-tratamentos {
     margin-top: 1rem;
-    list-style: none;
-
     display: flex;
     flex-direction: column; 
-    align-items: center ;  
+}
+
+
+.dermatologia-clinica,
+.tricologia,
+.dermatologia-estetica {
+    max-height: 30rem; /* Altura comum para as imagens */
+    width: 100%;
+    position: relative;
+    height: 35rem;
+
+    margin-top: 1rem;
+}
+
+.dermatologia-clinica,
+.tricologia,
+.dermatologia-estetica {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .container-tratamentos span{
     font-weight: 700;
     font-family: 'Fahkwang', sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #a6493c; 
-    display: flex;
-    justify-content: center;
-    align-self: flex-end;
-    align-items: flex-end;
-    height: 25rem;   
 }
 
-.container-tratamentos P {
-    color: #666;
-}
 
 .dermatologia-clinica{
-    position: relative;
     background-image: url('./assets/dermato-mao.png');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: 35%;
-    
-    height: 35rem;
-    width: 95vw;
-    margin-top: 2rem;
 }
 
-.dermatologia-clinica::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0); /* Cor branca completamente transparente (sem esbranquiçamento inicial) */
-    transition: background-color 0.5s; /* Adiciona uma transição suave de 0.5s para a cor de fundo */
-  }
-
-.dermatologia-clinica:hover::before {
-    background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade (esbranquiçamento no hover) */
-  }
-
-.dermatologia-clinica span, p{
-    position: relative;
-    z-index: 1; /* Coloca o texto acima da camada de sobreposição */
-    text-align: center;
-  }
-
 .tricologia{
-    position: relative;
     background-image: url('./assets/dermato-couro-cabeludo.png');
     background-size: cover;
     background-position: 35%;
-    height: 35rem;
-    width: 95vw;
-    margin-top: 2rem;
+ 
 }
 
-.tricologia::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0); /* Cor branca completamente transparente (sem esbranquiçamento inicial) */
-    transition: background-color 0.5s; /* Adiciona uma transição suave de 0.5s para a cor de fundo */
-  }
-
-.tricologia:hover::before {
-    background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade (esbranquiçamento no hover) */
-  }
-
-.tricologia span, p{
-    position: relative;
-    z-index: 1; /* Coloca o texto acima da camada de sobreposição */
-    text-align: center;
-  }
-
-
 .dermatologia-estetica{
-    position: relative;
     background-image: url('./assets/dermato-botox.png');
     background-size: cover;
     background-position: 35%;
-    height: 35rem;
-    width: 95vw;
-    margin-top: 2rem;
 }
-
-.dermatologia-estetica::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0); /* Cor branca completamente transparente (sem esbranquiçamento inicial) */
-    transition: background-color 0.5s; /* Adiciona uma transição suave de 0.5s para a cor de fundo */
-  }
-
-.dermatologia-estetica:hover::before {
-    background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade (esbranquiçamento no hover) */
-  }
-
-.dermatologia-estetica span, p{
-    position: relative;
-    z-index: 1; /* Coloca o texto acima da camada de sobreposição */
-    text-align: center;
-  }
-
-
 
 /* ---- SAIBA MAIS ----*/
 
@@ -411,7 +342,6 @@ h4 {
 
 .saibamaiscontainer button{
     padding: 1.5rem;
-    border-radius: .8rem;
     background-color: #a6493c;
     border: none;
     
@@ -469,8 +399,7 @@ iframe {
     border: none;
     background-color: #a6493c;  
     padding: 1rem;
-    margin-top: 2rem;
-    border-radius: 1rem;  
+    margin-top: 2rem;  
 }
 
 .localizacao-container button:hover {
@@ -481,7 +410,6 @@ iframe {
 .localizacao-container button a{
     text-decoration: none;
     font-size: 1.6rem;
-    font-weight: 700;
     color: #ede5dd;
 }
 
@@ -503,29 +431,28 @@ footer {
 /* -------------------- MEDIA QUERIES --------------------- */
 
 @media (max-width: 40em) {
+    body {
+        font-size: 1.4rem;
+    }
+
     header {
-        background-color: #92a2a4;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 2rem;
-        position: fixed;
     }
 
     .logo img{
-        max-height: 5rem;
-        margin-left:10rem;
+        max-height: 4rem;
     }
     
-    .container-menu li {
-        font-size: 1rem;
-        width: 20rem;
+    .container-menu ul{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
     }
 
-    .container-menu {
-        display: flex;
-        justify-content: column;
-        align-items: center;
+    .container-menu li {
+        font-size: 1rem;
     }
 
     .img-insta{
@@ -534,136 +461,134 @@ footer {
     
     
     /*       banner       */
-     .banner {
-        height: 40rem;
-        padding-left: 0;
-        padding-top: 10rem;
-        padding-bottom: 0;
-    }
+   .banner {
+        background-position: 35%;
+   }    
     
     h1 {
         font-size: 1.6rem;
-        color: #ede5dd;
         margin-left: 2rem;
         margin-top: 20rem;
     }
 
     .banner button{
+        min-height: 3rem;
+        max-width: 10rem;
         margin-left: 2rem;
     }
 
     .banner button a{
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
   
     /*      sobre      */
     
     #sobre {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        
+    }
+
+    #sobre .image-sobre{
+        max-width: 99%;
+        
     }
     
     h2 {
         font-size: 2rem;  
-        width: 30rem;
-        margin: 0 auto;
+        max-width: 90%;
+        text-align: center;
+        margin: 2rem auto;
     }
 
     #sobre p{
-        width: 30rem;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        text-align: center;          
+        width: 90%;
+        margin: 0 auto;          
     }
 
     #sobre .imagens-curriculo{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: center; 
-
-    }
-
-    #sobre img{
+        margin-top: 1rem;
+        margin-left: 2rem;
+        gap: 1rem;
         height: 3rem;
     }
-    
-    /*      Tratamentos     */   
-    .container-tratamentos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;   
-    }
 
+    /*      Tratamentos     */  
+    #especialidades{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        text-align: center;
+    }
+    
     h4{
         font-size: 2rem;
     }
 
+    .container-tratamentos {
+        margin-top: 1rem;   
+    }
+
+
     .container-tratamentos span{
          font-size: 2rem;
-         font-weight: 700;
-    }
-    
-    
-    .container-tratamentos {
-        font-size: 1.6rem;
+         height: auto;
+         margin-bottom: 1rem;
     }
     
     .container-tratamentos p {
         font-size: 1.4rem;
-        margin-bottom: 2rem;
-        color: black;
-        margin-left: 2rem;
-        margin-right: 2rem;
+    }   
+    
+    .container-tratamentos div {
+        background-size: cover;
+        background-position: 35%;
+        margin-top: 2rem;
     }
     
-    .container-tratamentos img {
-        max-height: 20rem;
-        max-width: 20rem;
+    .dermatologia-clinica,
+    .tricologia,
+    .dermatologia-estetica {
+        height: 25rem; /* Altura comum para as imagens */
+        width: 100%;
+        position: relative;
     }
     
-     
+
         
     /*        saiba mais       */
     #saiba-mais{
-        background-color: #ebdacb;
-    }
-
-    h4 {
-        font-size: 2rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
     }
 
     .saibamaiscontainer {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        text-align: center;
     }
-    
-        
+
+  
     /*      localização     */
     #localização {
-        padding-top: o;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    h5 {
+        font-size: 2rem;
     }
 
     .localizacao-container {
-        display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        text-align: center;
+    }
+
+    .localizacao1, .localizacao2, .localizacao3 {
+        width: 90%; /* Ajusta a largura das seções de localização */
+        margin-bottom: 3rem; /* Adiciona espaçamento inferior */
     }
     
     .localizacao-container p{
-        font-size: 1.8rem;
         margin-bottom: 1rem;
     }
 
@@ -671,41 +596,18 @@ footer {
         margin-top: 0;
         margin-bottom: 5rem;
     }
-    
-    h5 {
-        font-size: 2rem;
-    }
+       
 
     iframe {
-        width: 30rem;
-        height: auto;
+        width: 100%;
+        max-height: 100%;
         margin-bottom: 1rem;
     }
     
     
-    /*      contato     */
-   
-    #contato {
-        display: flex;
-        flex-direction: column;
-        padding-top:  0;
-    }
-
-    .containercontato{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .containerinstagram{
-        align-items: center;
-        margin-left: 0;
-        margin-top: 3rem;
-    }
-    
     /*     footer     */
     footer {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     
 }
