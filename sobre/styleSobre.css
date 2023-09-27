@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family:'Lato', sans-serif;
+    background-color: #ede5dd;
+    max-width: 100%;
+    
+    overflow-x: hidden;
+}
+
+main {
+    margin: 0 auto;
+}
+
+/*-----------HEADER-----------*/
+
+header {
+    background-color: #92a2a4;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+}
+
+.logo img{
+    max-height: 8rem;
+}
+
+.container-menu {
+    display: flex;
+    align-items: center;
+}
+
+.container-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.container-menu li {
+    margin-left: 2rem;
+}
+
+.container-menu a {
+    text-decoration: none;
+    color: #e4e8e9;
+    font-size: 1.6rem;
+    transition: color 0.3s ease;
+}
+
+.container-menu a:hover {
+    cursor: pointer;
+    color: #f7f9fa;
+}
+
+.instagram-button{
+    background-color: transparent;
+    border: none;
+}
+
+.instagram-button:hover {
+    cursor: pointer;
+}
+
+button .img-insta{
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: filter 0.3s ease;
+}
+
+/* ------   MAIN ------ */
+.container-sobre {
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.image-sobre {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    height: 50rem;
+    margin-left: 10rem;
+}
+
+.text-sobre {
+    margin-top: 15rem;
+    margin-left: 20rem;
+    background-color: #92a2a4;
+    padding: 10rem;
+}
+
+main h1{
+    font-family: 'Fahkwang', sans-serif;
+    color: #a6493c;
+}
+
+main p{
+    line-height: 2rem;
+    font-size: 1.6rem;
+    max-width: 40rem;
+    margin-bottom: 1.3rem;
+    color: #ede5dd;
+}
+
+
+/* -------- EMPRESA ---------- */
+
+.empresa {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0; /* Cor de fundo da section */
+    padding: 2rem; /* Espaçamento interno */
+    gap: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-image: url(../assets/M-cor.png);
+    background-size: cover;
+    
+}
+
+.caixa {
+    background-color: #fff; /* Cor de fundo das caixas */
+    padding: 4rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra nas caixas */
+    width: 25rem;
+    height: 30rem;
+}
+
+/* Estilos para os títulos (h2) */
+.caixa h3 {
+    font-size: 2.5rem;
+    color: #a6493c; /* Cor do texto dos títulos */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para os parágrafos (p) */
+.caixa p {
+    font-size: 1.6rem;
+    color: #666; /* Cor do texto dos parágrafos */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* ----- FOOTER ---- */
+footer {
+    background-color: #e9ddd2;; 
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #666;
+}
+
+
+/* -------------------- MEDIA QUERIES --------------------- */
+
+@media (max-width: 40em) {
+    body {
+        font-size: 1.4rem;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img{
+        max-height: 4rem;
+    }
+    
+    .container-menu ul{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-menu li a{
+        font-size: 1rem;
+    }
+
+    button .img-insta{
+        margin-top: 1rem;
+        height: 1.5rem;
+    }
+
+    /*  sobre   */
+
+    .container-sobre {
+        flex-direction: column;
+        margin-bottom: 5rem; 
+        margin-left: 0;  
+    }
+
+    .image-sobre {
+        position: absolute;
+        margin-top: 2rem;
+        height: 25rem;
+        margin-left: 2rem;
+    }
+
+    .text-sobre {
+        margin-top: 20rem;
+        margin-left: 0;
+        padding-top: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        width: 30rem;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main p {
+        line-height: 1.6rem;
+        font-size: 1.4rem;
+    }
+
+    /*    Empresa      */
+
+    .empresa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+
+    .empresa h3 { 
+        font-size: 2rem;
+    }
+
+    .empresa p{
+        font-size: 1.4rem;
+    }
+
+    .caixa {
+        background-color: #fff; /* Cor de fundo das caixas */
+        padding: 4rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra nas caixas */
+        width: 20rem;
+        height: 25rem;
+    }
+
+
+     /*     footer     */
+     footer {
+        font-size: 1.4rem;
+    }
+}

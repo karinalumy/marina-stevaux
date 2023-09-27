@@ -57,7 +57,7 @@ header {
 .container-menu a {
     text-decoration: none;
     color: #e4e8e9;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .container-menu a:hover {
@@ -74,22 +74,25 @@ header {
     cursor: pointer;
 }
 
-.img-insta{
+button .img-insta{
     height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: filter 0.3s ease;
 }
+
 
 /* ------MAIN-------*/
 
 .banner {
-    background-image: url('./assets/dermatoprocedure.jpg');
-    background-size: cover;
-    background-position: 35%;
+    background-image: url('./assets/descricao.JPG');
+    background-repeat: no-repeat;
+    background-position-y: 15%;
+    
     width: 100%;
-    height: 50rem;
+    height: 70rem;
     
     display: flex;
     flex-direction: column;
@@ -102,19 +105,26 @@ header {
 h1 {
     font-family: 'Fahkwang', sans-serif;
     font-size: 3rem;
-    margin-left: 5rem;
-    color: #f7f9fa;
+    margin-left: 8rem;
+    color: #a6493c;
     width: 30rem;
+}
+
+.banner p{
+    margin-left: 8rem;
+    font-family: "Lato", sans-serif;
+    color: #aa7974;
+    margin-bottom: 2rem;
 }
 
 .banner button {
     min-height: 4rem;
     max-width: 15rem;
     
-    background-color: #ede5dd;
+    background-color: #a6493c;
     border: none;
     
-    margin-left: 5rem;
+    margin-left: 8rem;
 
     font-weight: 700;
     margin-top: 1rem;
@@ -125,12 +135,12 @@ h1 {
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: 700;
-    color: #a6493c;
+    color: #dedfdd;
 }
 
 .banner button:hover {
     cursor: pointer;
-    background-color: rgb(241, 235, 235);
+    background-color: #f0e0d1;
 }
 
 /* ----- SOBRE ------*/
@@ -146,7 +156,7 @@ h1 {
 
 #sobre .image-sobre{
     max-width: 100%;
-    max-height: 45rem;
+    max-height: 50rem;
 }
 
 h2 {
@@ -180,50 +190,7 @@ h2 {
 }
 
 
-
-/* -------- EMPRESA ---------- */
-
-.empresa {
-    display: flex;
-    justify-content: center;
-    background-color: #f0f0f0; /* Cor de fundo da section */
-    padding: 2rem; /* Espaçamento interno */
-    gap: 10rem;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    background-image: url(./assets/M-cor.png);
-    background-size: cover;
-    
-}
-
-.caixa {
-    background-color: #fff; /* Cor de fundo das caixas */
-    padding: 4rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra nas caixas */
-    width: 25rem;
-    height: 30rem;
-}
-
-/* Estilos para os títulos (h2) */
-.caixa h3 {
-    font-size: 2.5rem;
-    color: #a6493c; /* Cor do texto dos títulos */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-/* Estilos para os parágrafos (p) */
-.caixa p {
-    font-size: 1.6rem;
-    color: #666; /* Cor do texto dos parágrafos */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-
-/* ----- TRTAMENTOS------*/
+/* ----- TRATAMENTOS------*/
 #especialidades {
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -281,7 +248,7 @@ h4 {
 }
 
 .tricologia{
-    background-image: url('./assets/dermato-couro-cabeludo.png');
+    background-image: url('./assets/tricologia3.png');
     background-size: cover;
     background-position: 35%;
  
@@ -303,7 +270,10 @@ h4 {
     text-align: center;
     align-items: center;
     height: fit-content;
-   
+
+    background-image: url('./assets/prancheta6ok.png');
+    background-size: cover;
+    background-position: 15%;
 }
 
 h4 {
@@ -325,12 +295,14 @@ h4 {
 
 .saibamaiscontainer img{
     border-radius: 50%;
+    height: 20rem;
 }
 
 .saibamaiscontainer p {
     font-weight: 700;
     margin: 0 auto;
     padding-top: 2rem;
+    color: #666;
 }
 
 .saibamaiscontainer button a{
@@ -352,6 +324,11 @@ h4 {
 .saibamaiscontainer button:hover {
     cursor: pointer;
     background-color: #b48c6d;
+}
+
+.div-insta img{
+    height: 20rem;
+    border-color: #ede5dd;
 }
 
 
@@ -425,6 +402,7 @@ footer {
     align-items: center;
     text-align: center;
     font-size: 1.6rem;
+    color: #666;
 }
 
 
@@ -451,48 +429,63 @@ footer {
         flex-direction: column;
     }
 
-    .container-menu li {
+    .container-menu li a{
         font-size: 1rem;
     }
 
-    .img-insta{
+    button .img-insta{
+        margin-top: 1rem;
         height: 1.5rem;
     }
     
     
     /*       banner       */
    .banner {
-        background-position: 35%;
+        background-size: cover;
+        background-position-y: -80%;
+        height: 40rem;
    }    
     
     h1 {
         font-size: 1.6rem;
-        margin-left: 2rem;
-        margin-top: 20rem;
+        margin-left: 1rem;
+        margin-top: 10rem;
     }
 
     .banner button{
         min-height: 3rem;
         max-width: 10rem;
-        margin-left: 2rem;
+        margin-left: 1rem;
     }
 
     .banner button a{
         font-size: 1rem;
+        color: #ede5dd;
+    }
+
+      
+    .banner button:hover {
+        cursor: pointer;
+        background-color: #f0e0d1;
     }
   
     /*      sobre      */
     
     #sobre {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         padding-top: 6rem;
         padding-bottom: 6rem;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
         
     }
 
     #sobre .image-sobre{
-        max-width: 99%;
-        
+        max-width: 80%;
     }
     
     h2 {
@@ -538,6 +531,7 @@ footer {
     
     .container-tratamentos p {
         font-size: 1.4rem;
+        max-width: 30rem;
     }   
     
     .container-tratamentos div {
