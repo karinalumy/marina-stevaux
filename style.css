@@ -414,6 +414,7 @@ footer {
     }
 
     header {
+        position: static;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -442,14 +443,15 @@ footer {
     /*       banner       */
    .banner {
         background-size: cover;
-        background-position-y: -80%;
-        height: 40rem;
+        background-position-y: 5%;
+        height: 30rem;
+        padding-bottom: 20rem;
    }    
     
     h1 {
         font-size: 1.6rem;
         margin-left: 1rem;
-        margin-top: 10rem;
+        margin-top: 0;
     }
 
     .banner button{
