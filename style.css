@@ -194,71 +194,53 @@ h2 {
 #especialidades {
     padding-top: 10rem;
     padding-bottom: 10rem;
-    text-align: center;   
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
 }
 
 h4 {
     font-family: 'Fahkwang', sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
     color:#a6493c;
 }
 
 .container-tratamentos {
-    margin-top: 1rem;
+    margin-top: 3rem;
     display: flex;
-    flex-direction: column; 
-}
-
-
-.dermatologia-clinica,
-.tricologia,
-.dermatologia-estetica {
-    max-height: 30rem; /* Altura comum para as imagens */
-    width: 100%;
-    position: relative;
-    height: 35rem;
-
-    margin-top: 1rem;
-}
-
-.dermatologia-clinica,
-.tricologia,
-.dermatologia-estetica {
-    color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: row; 
     justify-content: center;
+    gap: 3rem;
+  
+}
+
+.container-tratamentos img {
+    height: 25rem;
+    margin-bottom: 3rem;
+}
+
+.dermatologia-clinica,
+.tricologia,
+.dermatologia-estetica {
+    color: #ede5dd;
+    font-size: 1.6rem; 
+    width: 25rem;
+    background-color: #b68b71;
+    padding-bottom: 4rem;  
 }
 
 .container-tratamentos span{
     font-weight: 700;
     font-family: 'Fahkwang', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #a6493c; 
 }
 
-
-.dermatologia-clinica{
-    background-image: url('./assets/dermato-mao.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 35%;
+.dermatologia-clinica span {
+    padding-top: 3rem;
 }
 
-.tricologia{
-    background-image: url('./assets/tricologia3.png');
-    background-size: cover;
-    background-position: 35%;
- 
-}
-
-.dermatologia-estetica{
-    background-image: url('./assets/dermato-botox.png');
-    background-size: cover;
-    background-position: 35%;
-}
 
 /* ---- SAIBA MAIS ----*/
 
@@ -446,6 +428,7 @@ footer {
         background-position-y: 5%;
         height: 30rem;
         padding-bottom: 20rem;
+        width: 100%;
    }    
     
     h1 {
@@ -498,8 +481,8 @@ footer {
     }
 
     #sobre p{
-        width: 90%;
-        margin: 0 auto;          
+        width: 80%;
+        margin-left: 2rem;        
     }
 
     #sobre .imagens-curriculo{
@@ -513,7 +496,6 @@ footer {
     #especialidades{
         padding-top: 6rem;
         padding-bottom: 6rem;
-        text-align: center;
     }
     
     h4{
@@ -521,37 +503,22 @@ footer {
     }
 
     .container-tratamentos {
-        margin-top: 1rem;   
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: center;
     }
 
-
     .container-tratamentos span{
-         font-size: 2rem;
+         font-size: 1.6rem;
          height: auto;
          margin-bottom: 1rem;
     }
     
     .container-tratamentos p {
-        font-size: 1.4rem;
-        max-width: 30rem;
+        font-size: 1.4rem; 
     }   
     
-    .container-tratamentos div {
-        background-size: cover;
-        background-position: 35%;
-        margin-top: 2rem;
-    }
-    
-    .dermatologia-clinica,
-    .tricologia,
-    .dermatologia-estetica {
-        height: 25rem; /* Altura comum para as imagens */
-        width: 100%;
-        position: relative;
-    }
-    
-
-        
+           
     /*        saiba mais       */
     #saiba-mais{
         padding-top: 6rem;
@@ -580,7 +547,7 @@ footer {
     }
 
     .localizacao1, .localizacao2, .localizacao3 {
-        width: 90%; /* Ajusta a largura das seções de localização */
+        width: 80%; /* Ajusta a largura das seções de localização */
         margin-bottom: 3rem; /* Adiciona espaçamento inferior */
     }
     

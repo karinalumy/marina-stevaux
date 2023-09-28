@@ -143,6 +143,7 @@ footer {
     }
 
     header {
+        position: static;
         display: flex;
         align-items: center;
         justify-content: center;
