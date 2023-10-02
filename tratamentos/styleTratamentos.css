@@ -171,11 +171,12 @@ footer {
 
     /*   tratamentos   */
     .container-tratamentos {
-       background-position: 60%;
-       background-size: cover;
+        background-position: 60%;
+        background-size: cover;
 
-       padding-left: 3rem;
-    
+        padding-left: 3rem;
+        padding-top: 1rem;
+        
         line-height: 2rem;   
     }
     
@@ -185,7 +186,7 @@ footer {
     }
     
     .container-tratamentos h1 {
-        margin-top: 10rem;
+        margin-top: 3rem;
         margin-bottom: 2rem;
         font-family: 'Fahkwang', sans-serif;
         color:#a6493c
