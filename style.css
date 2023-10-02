@@ -87,7 +87,7 @@ button .img-insta{
 /* ------MAIN-------*/
 
 .banner {
-    background-image: url('./assets/descricao4.png');
+    background-image: url('./assets/descricao.JPG');
     background-size: cover;
     background-position-y: 15%;
     
@@ -126,7 +126,6 @@ h1 {
     
     margin-left: 8rem;
 
-    font-weight: 700;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }

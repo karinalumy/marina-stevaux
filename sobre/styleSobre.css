@@ -89,30 +89,25 @@ button .img-insta{
 .container-sobre {
     margin-top: 20rem;
     margin-bottom: 10rem;
-    margin-left: 10rem;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: relative;
+    
 }
 
 .image-sobre {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    top: -3rem;
-    left: 0;
-    height: 50rem;
-    margin-left: 10rem;
+    height: 65rem;
 }
 
 .text-sobre {
-    margin-top: 15rem;
-    margin-left: 20rem;
     background-color: #92a2a4;
-    padding: 10rem;
+    padding: 5rem;
+    height: 65rem;
 }
 
 main h1{
@@ -222,25 +217,31 @@ footer {
     /*  sobre   */
 
     .container-sobre {
-        flex-direction: column;
-        margin-bottom: 5rem; 
+        display: grid;
+        justify-items: center;
+        
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "image"
+            "text";
         margin-left: 0;  
+        margin-top: 0;
+        margin-bottom: 3rem;    
     }
 
     .image-sobre {
-        position: absolute;
-        margin-top: 2rem;
-        height: 25rem;
-        margin-left: 2rem;
+        grid-area: image;
+        height: 35rem;
+        padding-top: 0;
+        margin-top: 3rem;
     }
 
     .text-sobre {
-        margin-top: 20rem;
-        margin-left: 0;
-        padding-top: 5rem;
+        grid-area: text;
+        padding-top: 2rem;       
         padding-left: 1rem;
         padding-right: 1rem;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
         width: 30rem;
     }
 
@@ -262,8 +263,7 @@ footer {
         align-items: center;
         text-align: center;
     }
-
-    
+ 
 
     .empresa h3 { 
         font-size: 2rem;
