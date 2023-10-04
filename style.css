@@ -9,9 +9,9 @@
 }
 
 body {
-    font-size: 2rem;
-    font-family:'Lato', sans-serif;
-    background-color: #ede5dd;
+    font-size: 1.8rem;
+    font-family:'Montserrat', sans-serif;
+    background-color: #fff;
     width: 100%;
     height: 100%;
 }
@@ -26,6 +26,7 @@ header {
     background-color: #92a2a4;
     display: flex;
     justify-content: space-around;
+
     padding-top: 1rem;
     padding-bottom: 1rem;
     
@@ -52,12 +53,13 @@ header {
 .container-menu li {
     margin-left: 2rem;
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 
 .container-menu a {
     text-decoration: none;
     color: #e4e8e9;
-    font-size: 1.6rem;
 }
 
 .container-menu a:hover {
@@ -87,10 +89,9 @@ button .img-insta{
 /* ------MAIN-------*/
 
 .banner {
-    background-image: url('./assets/descricao.JPG');
+    background-image: url('./assets/home.png');
     background-size: cover;
-    background-position-y: 15%;
-    
+        
     max-width: 100%;
     height: 60rem;
     
@@ -98,49 +99,90 @@ button .img-insta{
     flex-direction: column;
     justify-content: center;
     
-    padding-left: 2rem;
-    padding-bottom: 20rem;       
+    padding-left: 1rem;
+    padding-bottom: 10rem;       
+
+    overflow: hidden;
 }
 
-h1 {
-    font-family: 'Fahkwang', sans-serif;
-    font-size: 3rem;
-    margin-left: 8rem;
+
+
+@keyframes slide-in {
+    to {
+        opacity: 1; /* Terminar com opacidade total */
+        transform: translateX(0); /* Terminar com posição original */
+    }
+}
+
+
+.banner h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-left: 5rem;
     color: #a6493c;
     width: 30rem;
+
+    opacity: 0; /* Comece com opacidade 0 para que eles estejam ocultos inicialmente */
+    
+    animation: slide-in 1s forwards;
+    transform: translateX(-100%);
+    
 }
 
-.banner p{
-    margin-left: 8rem;
-    font-family: "Lato", sans-serif;
-    color: #aa7974;
+.banner p {
+    margin-left: 5rem;
+    font-weight: 700;
+    color: #a6493c;
     margin-bottom: 2rem;
+    font-size: 3.5rem;
+    
+    transform-origin: center;
+    animation: slide-in-center 1s forwards;
+    transform: scale(0); /* Comece com escala 0 */
+}
+
+@keyframes slide-in-center {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .banner button {
     min-height: 4rem;
-    max-width: 20rem;
+    max-width: fit-content;
+    padding: 1.5rem;
     
     background-color: #a6493c;
-    border: none;
+    border: 2px solid white;
     
-    margin-left: 8rem;
-
-    margin-top: 1rem;
+    margin-left: 5rem;
     margin-bottom: 2rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+    transform: translateY(100%);
+
+    opacity: 0; /* Comece com opacidade 0 para que eles estejam ocultos inicialmente */
+    
+    animation: slide-in 2s forwards; 
+
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .banner button a{
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    color: #dedfdd;
+    color: white;
 }
 
 .banner button:hover {
     cursor: pointer;
     background-color: #aa7974;
+    
+    border: 2px solid #383838 ;
 }
+
 
 /* ----- SOBRE ------*/
 
@@ -149,6 +191,7 @@ h1 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding-top: 10rem;
     padding-bottom: 10rem;
     max-width: 100%;
@@ -156,14 +199,15 @@ h1 {
 
 #sobre .image-sobre{
     max-width: 100%;
-    max-height: 50rem;
+    max-height: 60rem;
 }
 
 h2 {
-    font-family: 'Fahkwang', sans-serif;
-    font-size: 3rem;  
-    max-width: 65rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;  
+    width: 50rem;
     color: #a6493c; 
+    text-align: left;
 }
 
 .sobre-container {
@@ -176,9 +220,10 @@ h2 {
     max-width: 40rem;
     display: flex;
     text-align: start;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     
-    color: #666;
+    
+    color: #383838;
     width: 65rem;
 }
 
@@ -202,9 +247,9 @@ h2 {
     text-align: center;
 }
 
-h4 {
-    font-family: 'Fahkwang', sans-serif;
-    font-size: 4rem;
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
     color:#a6493c;
 }
 
@@ -225,22 +270,23 @@ h4 {
 .dermatologia-clinica,
 .tricologia,
 .dermatologia-estetica {
-    color: #ede5dd;
-    font-size: 1.6rem; 
+    color: black;
     width: 25rem;
-    background-color: #b68b71;
+    background-color: #dedfdd;
     padding-bottom: 4rem;  
 }
 
 .container-tratamentos span{
     font-weight: 700;
-    font-family: 'Fahkwang', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     color: #a6493c; 
 }
 
-.dermatologia-clinica span {
-    padding-top: 3rem;
+.especialidades-p {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 
@@ -253,15 +299,15 @@ h4 {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    height: fit-content;
-
+    justify-content: center;
+    
     background-image: url('./assets/prancheta6ok.png');
     background-size: cover;
-    background-position: 15%;
+    max-width: 100%;
 }
 
 h4 {
-    font-family: 'Fahkwang', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     color: #a6493c;
 }
@@ -279,27 +325,31 @@ h4 {
 
 .saibamaiscontainer img{
     border-radius: 50%;
-    height: 20rem;
+    max-width: 20rem;
+    height: auto;
 }
 
 .saibamaiscontainer p {
     font-weight: 700;
     margin: 0 auto;
     padding-top: 2rem;
-    color: #666;
+    color: #383838;
 }
 
 .saibamaiscontainer button a{
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
-    
+    font-weight: 700;
     color: white;
     text-decoration: none;
 }
 
 .saibamaiscontainer button{
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: #a6493c;
-    border: none;
+    border: 2px solid white;
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     
     margin-top: 1rem;
     margin-bottom: 3rem;
@@ -307,7 +357,9 @@ h4 {
 
 .saibamaiscontainer button:hover {
     cursor: pointer;
-    background-color: #b48c6d;
+    background-color: #aa7974;
+    
+    border: 2px solid #383838 ;
 }
 
 .div-insta img{
@@ -327,7 +379,7 @@ h5 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-family: 'Fahkwang', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     color: #a6493c;
     margin-bottom: 3rem;
@@ -350,7 +402,7 @@ h5 {
 .localizacao-container p{
     margin-bottom: 2rem;
     font-size: 1.8rem;
-    color:#666;
+    color:black;
 }
 
 iframe {
@@ -362,41 +414,35 @@ iframe {
     border: none;
     background-color: #a6493c;  
     padding: 1rem;
-    margin-top: 2rem;  
+    margin-top: 2rem; 
+    
+    border: 2px solid white;
+   
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .localizacao-container button:hover {
     cursor: pointer;
-    background-color: #b48c6d;
+    background-color: #aa7974;
+    
+    border: 2px solid #383838 ;
 }
 
 .localizacao-container button a{
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     font-size: 1.6rem;
-    color: #ede5dd;
+    font-weight: 700;
+    color: white;
 }
 
 
-/* ----- FOOTER ---- */
-footer {
-    background-color: #e9ddd2;; 
-    width: 100%;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 1.6rem;
-    color: #666;
-}
 
 /*---------whatsapp button----------*/
 
 #whatsapp-button {
-    color: #fff;
-    padding: 10px 20px;
     border: none;
+    background-color: transparent;
     cursor: pointer;
 }
 
@@ -405,9 +451,9 @@ footer {
     display: none;
     position: fixed;
     top: 60%;
-    left: 80%;
+    left: 85%;
     transform: translate(-50%, -50%);
-    background-color: #92a2a4;
+    background-color: #05dd61;
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   
@@ -418,13 +464,14 @@ footer {
 }
 
 #whatsapp-content span{
-    color: #ede5dd;
+    color: #fff;
     font-size: 1.6rem;
-    font-family: "Fahkwang", sans serif;
+    font-family: "Montserrat", sans serif;
+    font-weight: 700;
 }
 
 #whatsapp-content img{
-    height: 2rem;
+    height: 3rem;
     margin-right: 1rem;
     align-items: flex-start;
 }
@@ -440,8 +487,8 @@ footer {
 }
 
 #whatsapp-content li {
-  font-size: 1.8rem;  
-  background-color: #ede5dd;
+  font-size: 1.6rem;  
+  background-color: #fff;
   color: black;
   width: 30rem;
     
@@ -454,8 +501,8 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
+  text-align: start;  
 
 }
 
@@ -475,12 +522,28 @@ footer {
     color: black;
 }
 
+/* ----- FOOTER ---- */
+footer {
+    background-color: #e9ddd2;; 
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #666;
+}
+
+
 
 /* -------------------- MEDIA QUERIES --------------------- */
 
 @media (max-width: 60em) {
     body {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+        
     }
 
     header {
@@ -488,10 +551,12 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        height: auto;
     }
 
     .logo img{
-        max-height: 4rem;
+        max-height: 5rem;
     }
     
     .container-menu ul{
@@ -501,11 +566,12 @@ footer {
     }
 
     .container-menu li a{
-        font-size: 1rem;
+        font-size: 1.2rem;
+
     }
 
     button .img-insta{
-        margin-top: 1rem;
+        margin-top: .3rem;
         height: 1.5rem;
     }
     
@@ -513,77 +579,80 @@ footer {
     /*       banner       */
     
    .banner {
-    max-width: 100%;
-    height: 30rem;
-
-    justify-content: flex-start; 
-    align-items: flex-start;
-    
+        max-width: 100%;
+        height: 40rem;
+        justify-content: flex-start;
          
     }
       
     
-    h1 {
-        font-size: 1.6rem;
-        margin-right: 0;
-        margin-top: 0;
+    .banner h1 {
+        font-size: 1.4rem;
         margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .banner p{
+        font-size: 1.6rem;
+        margin-left: 0;
+        max-width: 25rem;
+        margin-bottom: 1rem;
+        margin-top: 0;
     }
 
     .banner button{
         min-height: 3rem;
-        width: 10rem;
+        width: fit-content;
         margin-left: 0;
-        
+        background-color: #a6493c;
+        border: 2px solid white;
     }
 
     .banner button a{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
         font-size: 1rem;
-        color: #ede5dd;
+        color:  white;
+        display: flex;
+        align-items: center;
     }
 
-      
-    .banner button:hover {
-        cursor: pointer;
-        background-color: #f0e0d1;
-    }
-  
+     
     /*      sobre      */
     
     #sobre {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        text-align: center;
         padding-top: 6rem;
         padding-bottom: 6rem;
-        margin: 0;
-        padding-left: 0;
-        padding-right: 0;
         
     }
 
     #sobre .image-sobre{
-        max-width: 80%;
+        width: 80%;
     }
-    
+   
     h2 {
         font-size: 2rem;  
-        max-width: 90%;
-        text-align: center;
+        max-width: 80%;
+        
         margin: 2rem auto;
     }
 
     #sobre p{
-        width: 80%;
-        margin-left: 2rem;        
+        margin: 2rem auto;
+        font-size: 1.4rem;
+        
+        max-width: 80%;       
     }
 
     #sobre .imagens-curriculo{
         margin-top: 1rem;
-        margin-left: 2rem;
+        margin-left: 4rem;
         gap: 1rem;
         height: 3rem;
+        
+               
     }
 
     /*      Tratamentos     */  
@@ -592,7 +661,7 @@ footer {
         padding-bottom: 6rem;
     }
     
-    h4{
+    h3{
         font-size: 2rem;
     }
 
@@ -617,12 +686,29 @@ footer {
     #saiba-mais{
         padding-top: 6rem;
         padding-bottom: 6rem;
+        max-width: 100%;
+        height: auto;
+    }
+
+    h4{
+        font-size: 2rem;
     }
 
     .saibamaiscontainer {
         flex-direction: column;
         align-items: center;
     }
+
+    .saibamaiscontainer img{
+        height: 20rem;
+    }
+
+    .saibamaiscontainer button a{
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    
 
   
     /*      localização     */
@@ -637,8 +723,11 @@ footer {
 
     .localizacao-container {
         flex-direction: column;
-        align-items: center;
-        
+        align-items: center;   
+    }
+
+    .localizacao-container p{
+        font-size: 1.4rem;
     }
 
     .localizacao1, .localizacao2, .localizacao3 {
@@ -657,6 +746,13 @@ footer {
         margin-top: 0;
         margin-bottom: 5rem;
     }
+
+    .localizacao-container button a{
+         font-size: 1.4rem;
+        font-weight: 400;
+        
+    }
+    
        
     iframe {
         max-width: 100%;
