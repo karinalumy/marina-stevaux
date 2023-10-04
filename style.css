@@ -100,7 +100,7 @@ button .img-insta{
     justify-content: center;
     
     padding-left: 1rem;
-    padding-bottom: 10rem;       
+    padding-bottom: 15rem;       
 
     overflow: hidden;
 }
@@ -130,11 +130,12 @@ button .img-insta{
 }
 
 .banner p {
+    width: 50rem;
     margin-left: 5rem;
     font-weight: 700;
     color: #a6493c;
     margin-bottom: 2rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
     
     transform-origin: center;
     animation: slide-in-center 1s forwards;
@@ -151,7 +152,8 @@ button .img-insta{
 .banner button {
     min-height: 4rem;
     max-width: fit-content;
-    padding: 1.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
     
     background-color: #a6493c;
     border: 2px solid white;
@@ -170,9 +172,10 @@ button .img-insta{
 }
 
 .banner button a{
+    font-family: "Montserrat", sans-serif;
     text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: 700;
+    font-size: 1.4rem;
+    
     color: white;
 }
 
@@ -338,8 +341,8 @@ h4 {
 
 .saibamaiscontainer button a{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 700;
+    font-size: 1.4rem;
+    
     color: white;
     text-decoration: none;
 }
@@ -431,12 +434,10 @@ iframe {
 .localizacao-container button a{
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-    font-size: 1.6rem;
-    font-weight: 700;
+    font-size: 1.4rem;
+    
     color: white;
 }
-
-
 
 /*---------whatsapp button----------*/
 
