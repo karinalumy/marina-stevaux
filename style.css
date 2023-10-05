@@ -545,7 +545,7 @@ footer {
 
 @media (max-width: 60em) {
     body {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         
     }
 
@@ -569,7 +569,7 @@ footer {
     }
 
     .container-menu li a{
-        font-size: 1rem;
+        
     }
 
     button .img-insta{
@@ -588,14 +588,14 @@ footer {
       
     
     .banner h1 {
-        font-size: 1rem;
+        font-size: 1.6rem;
         margin-left: 0;
         margin-top: 2rem;
         font-weight: 400;
     }
 
     .banner p{
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         margin-left: 0;
         max-width: 20rem;
         margin-bottom: 1rem;
@@ -613,7 +613,7 @@ footer {
     .banner button a{
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        font-size: 1rem;
+        font-size: 1.2rem;
         color:  white;
         display: flex;
         align-items: center;
@@ -638,20 +638,15 @@ footer {
     h2 {
         font-size: 2rem;  
         max-width: 80%;
-        
-        margin: 2rem auto;
     }
 
     .sobre-container {
         max-width: 80%;
-        margin-left: 1rem;
+        
     }    
 
     #sobre p{
-        margin: 2rem auto;
-        font-size: 1.4rem;
-        
-        max-width: 80%;       
+       max-width: 80%;       
     }
 
     #sobre .imagens-curriculo{
@@ -680,13 +675,13 @@ footer {
     }
 
     .container-tratamentos span{
-         font-size: 1.6rem;
+         
          height: auto;
          margin-bottom: 1rem;
     }
     
     .container-tratamentos p {
-        font-size: 1.4rem; 
+         
     }   
     
            
@@ -712,8 +707,8 @@ footer {
     }
 
     .saibamaiscontainer button a{
-        font-size: 1.4rem;
-        font-weight: 400;
+        
+        
     }
 
     
@@ -735,7 +730,7 @@ footer {
     }
 
     .localizacao-container p{
-        font-size: 1.4rem;
+       
     }
 
     .localizacao1, .localizacao2, .localizacao3 {
@@ -756,7 +751,7 @@ footer {
     }
 
     .localizacao-container button a{
-         font-size: 1.4rem;
+        
         font-weight: 400;
         
     }
