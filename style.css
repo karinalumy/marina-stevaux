@@ -452,8 +452,8 @@ iframe {
 #whatsapp-popup {
     display: none;
     position: fixed;
-    top: 60%;
-    left: 85%;
+    top: 50%;
+    left: 75%;
     transform: translate(-50%, -50%);
     background-color: #05dd61;
     padding: 2rem;
@@ -582,9 +582,10 @@ footer {
     
    .banner {
         max-width: 100%;
-        height: 40rem;
+        height: auto;
         justify-content: flex-start;
-         
+
+              
     }
       
     
@@ -631,7 +632,8 @@ footer {
     }
 
     #sobre .image-sobre{
-        width: 80%;
+        max-width: 80%;
+        height: auto;
     }
    
     h2 {
@@ -781,7 +783,7 @@ footer {
     /*         Estilos para o pop-up de WhatsApp       */
     #whatsapp-popup {
         top: 63%;
-        left: 50%;
+        left: 40%;
         transform: translate(-50%, -50%);    
     }
 
