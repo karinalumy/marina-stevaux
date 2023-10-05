@@ -546,7 +546,7 @@ footer {
 @media (max-width: 60em) {
     body {
         font-size: 1.4rem;
-        
+        font-family: 'Poppins', sans-serif;
     }
 
     header {
@@ -595,6 +595,7 @@ footer {
     }
 
     .banner p{
+        
         font-size: 1.2rem;
         margin-left: 0;
         max-width: 20rem;
@@ -611,7 +612,6 @@ footer {
     }
 
     .banner button a{
-        font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         font-size: 1rem;
         color:  white;
@@ -648,6 +648,7 @@ footer {
     }    
 
     #sobre p{
+        
         margin: 2rem auto;
         font-size: 1.4rem;
         
@@ -680,9 +681,9 @@ footer {
     }
 
     .container-tratamentos span{
-         font-size: 1.6rem;
-         height: auto;
-         margin-bottom: 1rem;
+        font-size: 1.6rem;
+        height: auto;
+        margin-bottom: 1rem;
     }
     
     .container-tratamentos p {
