@@ -546,7 +546,7 @@ footer {
 @media (max-width: 60em) {
     body {
         font-size: 1.4rem;
-        font-family: 'Poppins', sans-serif;
+        
     }
 
     header {
@@ -588,6 +588,7 @@ footer {
       
     
     .banner h1 {
+        
         font-size: 1rem;
         margin-left: 0;
         margin-top: 2rem;
@@ -595,7 +596,6 @@ footer {
     }
 
     .banner p{
-        
         font-size: 1.2rem;
         margin-left: 0;
         max-width: 20rem;
@@ -636,10 +636,11 @@ footer {
     }
    
     h2 {
+        
         font-size: 2rem;  
         max-width: 80%;
         
-        margin: 2rem auto;
+        margin-left: 1rem;
     }
 
     .sobre-container {
@@ -648,8 +649,7 @@ footer {
     }    
 
     #sobre p{
-        
-        margin: 2rem auto;
+        margin-left: 1rem;
         font-size: 1.4rem;
         
         max-width: 80%;       
