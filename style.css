@@ -546,7 +546,7 @@ footer {
 @media (max-width: 60em) {
     body {
         font-size: 1.4rem;
-        font-family: 'Montserrat', sans-serif;
+        
     }
 
     header {
@@ -771,7 +771,7 @@ footer {
     
     /*     footer     */
     footer {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     /*-       whatsapp button          */
@@ -786,16 +786,14 @@ footer {
 
     /*         Estilos para o pop-up de WhatsApp       */
     #whatsapp-popup {
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%); 
         max-width: 30rem; 
-       
     }
 
     #whatsapp-content {
         text-align: center; 
-        
     }
 
     #whatsapp-content span{
@@ -817,11 +815,9 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    
     }  
 
     #whatsapp-content li a{
-        font-family: 'Montserrat', san-serif; 
         font-size: 1.3rem;
     }
 
