@@ -789,12 +789,13 @@ footer {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); 
-        max-width: fit-content;
-        height: auto;   
+        max-width: 30rem; 
+       
     }
 
     #whatsapp-content {
-        text-align: center;  
+        text-align: center; 
+        
     }
 
     #whatsapp-content span{
@@ -811,10 +812,18 @@ footer {
     }
 
     #whatsapp-content li {
-        font-size: 1.4rem;  
-        padding: 1rem;
-        width: 25rem;
+        padding: 1rem; 
+        max-width: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
     }  
+
+    #whatsapp-content li a{
+        font-family: 'Montserrat', san-serif; 
+        font-size: 1.3rem;
+    }
 
     #close-button {
         margin-top: 1rem;
