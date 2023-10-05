@@ -452,8 +452,8 @@ iframe {
 #whatsapp-popup {
     display: none;
     position: fixed;
-    top: 50%;
-    left: 75%;
+    top: 55%;
+    left: 80%;
     transform: translate(-50%, -50%);
     background-color: #05dd61;
     padding: 2rem;
