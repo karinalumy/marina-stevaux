@@ -92,7 +92,7 @@ button .img-insta{
 .banner {
     background-image: url('./assets/marina.home.nova.png');
     background-size: cover;
-    background-position: 0% -20%;        
+    background-position: 0% -60%;       
     max-width: 100%;
     height: 60rem;
     
@@ -119,7 +119,7 @@ button .img-insta{
 .banner h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
-    margin-left: 5rem;
+    margin-left: 3rem;
     color: #a6493c;
     width: 30rem;
 
@@ -131,8 +131,8 @@ button .img-insta{
 }
 
 .banner p {
-    width: 50rem;
-    margin-left: 5rem;
+    width: 45rem;
+    margin-left: 3rem;
     font-weight: 700;
     color: #a6493c;
     margin-bottom: 2rem;
@@ -159,7 +159,7 @@ button .img-insta{
     background-color: #a6493c;
     border: 2px solid white;
     
-    margin-left: 5rem;
+    margin-left: 3rem;
     margin-bottom: 2rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
